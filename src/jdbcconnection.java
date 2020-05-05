@@ -29,6 +29,7 @@ public class jdbcconnection {
 			WebDriver driver = new ChromeDriver();
 			System.setProperty("webdriver.chrome.driver", "C://Program Files//Java//chromedriver.exe");
 			driver.get("https://login.salesforce.com/");
+			System.out.println("Code modified");
 			
 			
 			driver.findElement(By.xpath(".//*[@id='username']")).sendKeys(rs.getString("name"));	
